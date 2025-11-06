@@ -1,0 +1,101 @@
+= Uvod u AsciiDoc
+Karla Fučkan , Sveučilište u Zadru <fuchkann@gmsil.com>
+:revdate: 2025-11-06 
+:doctype: article
+:toc: 
+:toclevels: 3
+:icons: font
+:source-highlighter: highlight.js
+:sectnums: 
+:imagesdir: img/
+
+[abstract]
+== Sažetak
+Ovaj dokument objašnjava **osnovne principe AsciiDoc sintakse**. Namijenjen je studentima koji već poznaju Markdown, ali žele naučiti alat koji nudi više mogućnosti za strukturiranje i oblikovanje akademskog i tehničkog teksta.
+
+== Što je AsciiDoc
+AsciiDoc je *plain-text* format za pisanje strukturiranih dokumenata. Tekst je lako čitljiv u izvornom obliku i može se pretvoriti u **HTML**, **PDF** ili **DOCX** pomoću alata **Asciidoctor**.
+
+=== Glavne prednosti u odnosu na Markdown 
+- podržava naslove svih razina (`=`, `==`, `===`)
+- automatski izrađuje sadržaj i numerira poglavlja
+- koristi *atribute* i *varijable*
+- jednostavno dodaje _fusnote_, _tablice_, _citate_ i _blokove koda_
+
+== Struktura dokumenta
+Na početku se obično nalazi naslov, autor, datum i osnovni atributi.
+Naslovi se označavaju simbolima jednakosti (`=`).
+Više znakova znači nižu razinu naslova.
+
+```adoc 
+Author <email@domena.com
+:revdate: 2025-11-06
+:doctype: article
+:toc:
+:sectnums: 
+```
+
+== Formatiranje teksta
+Tekst se može podebljati, nagnuti ili precrtati.
+
+```adoc
+*podebljano*, _kurziv_ , [line-through]#Precrtano#
+```
+*podebljano*, _kurziv_ , [line-through]#Precrtano#
+
+
+== Popisi
+Numerirani popisi koriste brojeve ili točke.
+Nenumerirani popisi koriste zvjezdice ili crtice.
+
+```adoc
+. Numerirani popis
+..Stavka 1
+..Satvka 2
+
+```
+. Numerirani popis
+..Stavka 1
+..Satvka 2
+
+
+```adoc
+* Nenumerirani popis
+**Stavka
+*** Stavka
+```
+
+* Nenumerirani popis
+**Stavka
+*** Stavka
+
+
+== Linkovi i slike
+Možete dodavati poveznice na web stranice te umetati slike iz lokalne mape projekta.
+
+link:https://www.unizd.hr[Sveučilište u Zadru]
+
+image::tiger.png[alt='Tigar', width=60%]
+
+
+
+== Citati i fusnote
+Citati se prikazuju u posebnom bloku, uz ime autora.
+Fusnote se dodaju na kraju rečenice i sadrže kratko objašnjenje.
+
+== Tablice
+Tablice omogućuju pregledno prikazivanje podataka u redovima i stupcima.
+Svaka ćelija odvaja se vertikalnom crtom (|).
+
+== Kod
+Blokovi koda koriste se za prikaz primjera u programskim jezicima.
+Mogu imati i oznaku jezika, npr. python ili bash.
+
+== Napomene
+Posebni blokovi označavaju važne dijelove teksta, poput upozorenja ili savjeta.
+Primjeri su: TIP, NOTE, WARNING i IMPORTANT.
+
+== Zaključak
+AsciiDoc kombinira jednostavnost običnog teksta s mogućnostima profesionalnog oblikovanja. Kada savladate osnovnu sintaksu, lako možete izvesti dokument u HTML ili PDF oblik i objaviti ga putem GitHub-a.
+
+
